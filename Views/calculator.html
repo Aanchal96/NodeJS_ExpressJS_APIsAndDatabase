@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+ <html> 
+<body> 
+ <form> 
+  <hr>
+  <label for="inputa">Input A:</label> 
+  <input type="text" id="inputa" > 
+  <hr>
+  <label for="inputa">Input B:</label> 
+  <input type="text" id="inputb" > 
+  <hr>
+  <label for="inputa">Output:</label> 
+  <input type="text" id="output" > 
+  <hr>
+ </form> 
+
+<button id="addButton">Add</button> 
+
+<script> 
+ document.getElementById("addButton").addEventListener("click", function() 
+{ 
+   var inputA = parseFloat(document.getElementById("inputa").value);
+   var inputB = parseFloat(document.getElementById("inputb").value);
+   var output = inputA + inputB;
+   document.getElementById("output").value = output;
+}); 
+
+</script>
+</body> 
+</html>
